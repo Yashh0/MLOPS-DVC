@@ -9,6 +9,10 @@ data = {
 
 df = pd.DataFrame(data)
 
+new_line = {'Name' : 'David', 'Age' : 40, 'City' : 'Houston'}
+df.loc[len(df)] = new_line
+
+
 data_dir = 'our_data'
 os.makedirs(data_dir ,exist_ok = True)
 
