@@ -12,6 +12,9 @@ df = pd.DataFrame(data)
 new_line = {'Name' : 'David', 'Age' : 40, 'City' : 'Houston'}
 df.loc[len(df)] = new_line
 
+new_line_2 = {'Name' : 'emi', 'Age' : 22, 'City' : 'Mumbai'}
+df.loc[len(df)] = new_line_2
+
 
 data_dir = 'our_data'
 os.makedirs(data_dir ,exist_ok = True)
